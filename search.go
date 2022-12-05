@@ -10,7 +10,7 @@ import (
 	"strconv"
 )
 
-const searchURL = "https://www.imdb.com/find?%s"
+const searchURL = "https://www.imdb.com/find?q=%s"
 
 var (
 	titleIDRE = regexp.MustCompile(`<link rel="canonical" href="https://www.imdb.com/title/(tt\d+)/"`)
